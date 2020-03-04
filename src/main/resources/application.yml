@@ -1,0 +1,19 @@
+spring: 
+  application:
+    name: order-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+      properties: 
+        hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect 
+  datasource:
+    url: jdbc:mysql://localhost:3306/order?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: orderuser
+    password: orderuser
+google:
+  maps:
+    client:
+      api:
+        key: AIzaSyB6wx6aBPhBECHo-4e2hF0hbZliz1jnF1U
+    url: https://maps.googleapis.com/maps/api/distancematrix/json?origins={ORIGIN}&destinations={DESTINATION}&key={API_KEY}
